@@ -1,6 +1,6 @@
 "use client";
 
-import { Bell, Calendar, Settings, HelpCircle, Menu, ChevronLeft } from "lucide-react";
+import { Bell, Calendar, Settings, HelpCircle, PanelLeft, PanelRight } from "lucide-react";
 import {
   Select,
   SelectContent,
@@ -37,7 +37,6 @@ export default function Navbar({ isSidebarExpanded, onToggleSidebar }: NavbarPro
             transition={{ type: "spring", stiffness: 220, damping: 16 }}
             className="flex items-center gap-2"
           >
-        
             <Image
               src="/guidona-logo.svg"
               alt="Logo"
@@ -55,9 +54,9 @@ export default function Navbar({ isSidebarExpanded, onToggleSidebar }: NavbarPro
                 className="hidden md:inline-flex"
                 icon={
                   isSidebarExpanded ? (
-                    <ChevronLeft className="w-6 h-6 text-blue-200 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 transition" />
+                    <PanelLeft className="w-6 h-6 text-blue-200 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 transition" />
                   ) : (
-                    <Menu className="w-6 h-6 text-blue-200 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 transition" />
+                    <PanelRight className="w-6 h-6 text-blue-200 dark:text-gray-300 hover:text-white dark:hover:text-gray-100 transition" />
                   )
                 }
               />
